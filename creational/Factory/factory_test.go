@@ -1,8 +1,11 @@
-package Factory
+package factory
 
 import "testing"
 
 func TestNewRestaurant(t *testing.T) {
-	NewRestaurant("d").GetFood()
-	NewRestaurant("q").GetFood()
+	// 根据不同的工厂类生产不同的产品
+	c := &CocaFactory{}
+	c.NewCola().GetCola()
+	p := &PesiFactory{}
+	p.NewCola().GetCola()
 }

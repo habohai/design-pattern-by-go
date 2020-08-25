@@ -1,31 +1,37 @@
-package Factory
+package factory
 
 import "fmt"
 
-type Restaurant interface {
-	GetFood()
+type Cola interface {
+	GetCola()
 }
 
-type Donglaishun struct {
+type Factory interface{
+	NewCola() Cola
 }
 
-func (d *Donglaishun) GetFood() {
-	fmt.Println("东来顺的饭菜准备继续")
+type CocaCola struct {
 }
 
-type Qingfeng struct {
+func (d *CocaCola) GetCola() {
+	fmt.Println("可口可乐")
 }
 
-func (q *Qingfeng) GetFood() {
-	fmt.Println("庆丰包子铺饭菜准备就绪")
+type PesiCola struct {
 }
 
-func NewRestaurant(s string) Restaurant {
-	switch s {
-	case "d":
-		return &Donglaishun{}
-	case "q":
-		return &Qingfeng{}
-	}
-	return nil
+func (q *PesiCola) GetCola() {
+	fmt.Println("百事可乐")
+}
+
+type PesiFactory struct{}
+
+func (p *PesiFactory) NewCola() Cola {
+	return &PesiCola{}
+}
+
+type CocaFactory struct{}
+
+func (c *CocaFactory) NewCola() Cola{
+	return &CocaCola{}
 }
