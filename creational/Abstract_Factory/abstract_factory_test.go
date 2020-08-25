@@ -1,12 +1,15 @@
-package Abstract_Factory
+package abstract_factory
 
 import "testing"
 
-func TestNewSimpleShapeFactory(t *testing.T) {
-	factory := NewSimpleShapeFactory()
-	food := factory.CreateFood()
-	food.Cook()
+func TestAbstractFactory(t *testing.T) {
+	cf := &CocaFactory{}
+	cf.NewCola().GetCola()
+	cf.NewBottle().GetBottle()
+	cf.NewBox().GetBox()
 
-	vegetable := factory.CreateVegetable()
-	vegetable.Cook()
+	pf := &PesiFactory{}
+	pf.NewCola().GetCola()
+	pf.NewBottle().GetBottle()
+	pf.NewBox().GetBox()
 }

@@ -6,7 +6,7 @@
 
 简单工厂模式像一个代工厂，一个工厂可以生产多种产品。举个例子，一个饮料加工厂同时帮百事可乐和可口可乐生产，加工厂根据输入参数Type来生产不同的产品。
 
-![举例](../../img/creational/simple_factory.png)
+![简单工厂模式](../../img/creational/simple_factory.png)
 
 ## 优点
 
