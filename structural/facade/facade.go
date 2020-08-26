@@ -10,7 +10,7 @@ func NewCarModel() *CarModel {
 }
 
 func (c *CarModel) SetModel() {
-	fmt.Fprintf(outputWriter, " CarModel - SetModel\n")
+	fmt.Printf("CarModel - SetModel")
 }
 
 type CarEngine struct {
@@ -21,7 +21,7 @@ func NewCarEngine() *CarEngine {
 }
 
 func (c *CarEngine) SetEngine() {
-	fmt.Fprintf(outputWriter, " CarEngine - SetEngine\n")
+	fmt.Println("CarEngine - SetEngine")
 }
 
 type CarBody struct {
@@ -32,7 +32,7 @@ func NewCarBody() *CarBody {
 }
 
 func (c *CarBody) SetBody() {
-	fmt.Fprintf(outputWriter, " CarBody - SetBody\n")
+	fmt.Println("CarBody - SetBody")
 }
 
 type CarAccessories struct {
@@ -43,7 +43,7 @@ func NewCarAccessories() *CarAccessories {
 }
 
 func (c *CarAccessories) SetAccessories() {
-	fmt.Fprintf(outputWriter, " CarAccessories - SetAccessories\n")
+	fmt.Println("CarAccessories - SetAccessories")
 }
 
 type CarFacade struct {
@@ -63,10 +63,10 @@ func NewCarFacade() *CarFacade {
 }
 
 func (c *CarFacade) CreateCompleteCar() {
-	fmt.Fprintf(outputWriter, "******** Creating a Car **********\n")
+	fmt.Println("******** Creating a Car **********")
 	c.model.SetModel()
 	c.engine.SetEngine()
 	c.body.SetBody()
 	c.accessories.SetAccessories()
-	fmt.Fprintf(outputWriter, "******** Car creation is completed. **********\n")
+	fmt.Println("******** Car creation is completed. **********")
 }
