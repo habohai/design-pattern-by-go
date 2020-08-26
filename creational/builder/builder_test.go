@@ -1,4 +1,4 @@
-package Builder
+package builder
 
 import (
 	"fmt"
@@ -6,9 +6,8 @@ import (
 )
 
 func TestConcreteBuilder_GetResult(t *testing.T) {
-	builder := NewConcreteBuilder()
-	director := NewDirector(&builder)
-	director.Construct()
-	product := builder.GetResult()
-	fmt.Println(product.Built)
+	var builder Builder = &CharacterBuilder{}
+	var director *Director = &Director{builder: builder}
+	var character *Character = director.Create("loader", "AK47")
+	fmt.Println(character.GetName() + "," + character.GetArms())
 }
