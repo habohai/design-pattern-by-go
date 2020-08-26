@@ -1,15 +1,18 @@
-package Prototype
+package prototype
 
 import (
-	"github.com/stretchr/testify/assert"
 	"testing"
+
+	"github.com/google/go-cmp/cmp"
 )
 
 func TestConcretePrototype_Clone(t *testing.T) {
-	name:= "出去浪"
-	proto := ConcretePrototype{name:name}
+	name := "出去浪"
+	proto := ConcretePrototype{name: name}
 	newProto := proto.Clone()
 	actualName := newProto.Name()
 
-	assert.Equal(t,name,actualName)
+	if !cmp.Equal(name, actualName) {
+		t.Error("name: ", name, "actualName: ", actualName)
+	}
 }

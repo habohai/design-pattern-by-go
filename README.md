@@ -151,19 +151,12 @@
 
 创建型模式(Creational Pattern)对类的实例化过程进行了抽象，能够将模块中对象的创建和对象的使用分离。为了使结构更加清晰，外界对于这些对象只需要知道它们共同的接口，而不清楚其具体的实现细节，使整个系统的设计更加符合单一职责原则。
 
-- 简单工厂模式（Simple Factory Pattern）
+- [简单工厂模式（Simple Factory Pattern）](creational/simple_factory)
 - 工厂方法模式（Factory Method Pattern）
 - 抽象工厂模式（Abstract Factory Pattern）
 - 单例模式（Singleton Pattern）
 - 生成器模式（Builder Pattern）
 - 原型模式（Prototype Pattern)
-
-- 工厂方法模式
-- 抽象工厂模式  
-- 单例模式  
-- 建造者模式
-- 原型模式  
-
 
 ### 结构型(Structural)
 
