@@ -1,4 +1,4 @@
-package Command
+package command
 
 import "fmt"
 
@@ -17,6 +17,7 @@ func NewCommand(p *Person, method func()) Command {
 		method: method,
 	}
 }
+
 func (c *Command) Execute() {
 	c.method()
 }
