@@ -183,7 +183,7 @@
 - [解释器模式](behavioral/interpreter)
 - [迭代器模式](behavioral/iterator)
 - [中介者模式](behavioral/mediator)
-- 备忘录模式
+- [备忘录模式](behavioral/memento)
 - 观察者模式
 - 状态模式
 - 策略模式
