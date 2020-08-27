@@ -11,7 +11,7 @@ func TestHandler_Handle(t *testing.T) {
 
 	r := wang.Handler(1)
 	fmt.Println(r)
-	r = zhang.Handler(2)
+	r = zhang.Handler(1)
 	fmt.Println(r)
 
 }
