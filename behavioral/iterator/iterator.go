@@ -1,4 +1,4 @@
-package Iterator
+package iterator
 
 type Iterator interface {
 	Index() int

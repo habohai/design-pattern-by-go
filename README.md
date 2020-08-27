@@ -180,9 +180,9 @@
 
 - [职责链模式](behavioral/responsibility_chain)
 - [命令模式](behavioral/command)
-- 解释器模式
-- 迭代器模式
-- 中介者模式
+- [解释器模式](behavioral/interpreter)
+- [迭代器模式](behavioral/iterator)
+- [中介者模式](behavioral/mediator)
 - 备忘录模式
 - 观察者模式
 - 状态模式
