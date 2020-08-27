@@ -168,11 +168,13 @@
 
 - [装饰者模式](structural/decorator)
 - [外观模式](structural/facade)
-
 - [代理模式](structural/proxy)
-- 适配器模式
-- 桥接模式
-- 享元模式
+- [享元模式](structural/flyweight)
+- [桥接模式](structural/bridage)
+
+- [适配器模式](structural/adapter)
+
+
 
 - 适配器模式  
 - 桥接模式  

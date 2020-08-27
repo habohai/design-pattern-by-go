@@ -1,4 +1,4 @@
-package flyWeight
+package flyweight
 
 type FlyWeight struct {
 	Name string

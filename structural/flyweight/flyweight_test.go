@@ -1,4 +1,4 @@
-package flyWeight
+package flyweight
 
 import (
 	"testing"
