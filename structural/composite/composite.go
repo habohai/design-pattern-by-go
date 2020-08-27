@@ -1,23 +1,5 @@
 package composite
 
-import "fmt"
-
-type Component interface {
-	Traverse()
-}
-
-type Leaf struct {
-	value int
-}
-
-func NewLeaf(value int) *Leaf {
-	return &Leaf{value}
-}
-
-func (l *Leaf) Traverse() {
-	fmt.Println(l.value)
-}
-
 type Composite struct {
 	children []Component
 }

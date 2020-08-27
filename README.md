@@ -171,15 +171,8 @@
 - [代理模式](structural/proxy)
 - [享元模式](structural/flyweight)
 - [桥接模式](structural/bridage)
-
 - [适配器模式](structural/adapter)
 
-
-
-- 适配器模式  
-- 桥接模式  
-- 外观模式  
-- 享元模式
 - 组合模式
 
 ### 行为型(Behavioral)
