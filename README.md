@@ -185,7 +185,7 @@
 - [中介者模式](behavioral/mediator)
 - [备忘录模式](behavioral/memento)
 - [观察者模式](behavioral/observer)
-- 状态模式
+- [状态模式](behavioral/state)
 - 策略模式
 - 模板方法模式
 - 访问者模式
