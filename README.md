@@ -184,7 +184,7 @@
 - [迭代器模式](behavioral/iterator)
 - [中介者模式](behavioral/mediator)
 - [备忘录模式](behavioral/memento)
-- 观察者模式
+- [观察者模式](behavioral/observer)
 - 状态模式
 - 策略模式
 - 模板方法模式

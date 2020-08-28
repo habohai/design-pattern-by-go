@@ -1,4 +1,4 @@
-package Observer
+package observer
 
 import (
 	"fmt"
@@ -14,23 +14,23 @@ type Observer interface {
 	NotifyCallback(event Event)
 }
 
+type eventObserver struct {
+	ID   int
+	Time time.Time
+}
+
+func (e eventObserver) NotifyCallback(event Event) {
+	fmt.Printf("Recieved:%d after %v\n", event.Data, time.Since(e.Time))
+}
+
 type Subject interface {
 	AddListener(observer Observer)
 	RemoveListener(observer Observer)
 	Notify(event Event)
 }
 
-type eventObserver struct {
-	ID   int
-	Time time.Time
-}
-
 type eventSubject struct {
 	Observers sync.Map
-}
-
-func (e eventObserver) NotifyCallback(event Event) {
-	fmt.Printf("Recieved:%d after %v\n", event.Data, time.Since(e.Time))
 }
 
 func (e *eventSubject) AddListener(obs Observer) {
@@ -51,12 +51,12 @@ func (e *eventSubject) Notify(event Event) {
 	})
 }
 
-func Fib(n int) chan int{
+func Fib(n int) chan int {
 	out := make(chan int)
 	go func() {
 		defer close(out)
-		for i,j:=0,1; i<n;i,j=i+j,i{
-			out <-i
+		for i, j := 0, 1; i < n; i, j = i+j, i {
+			out <- i
 		}
 	}()
 	return out
