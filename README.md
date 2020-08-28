@@ -186,8 +186,8 @@
 - [备忘录模式](behavioral/memento)
 - [观察者模式](behavioral/observer)
 - [状态模式](behavioral/state)
-- 策略模式
-- 模板方法模式
+- [策略模式](behavioral/strategy)
+- [模板方法模式](behavioral/template)
 - 访问者模式
 
 ## 行为型模式概述
